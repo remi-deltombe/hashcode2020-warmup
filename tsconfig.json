@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "none",
+    "module": "CommonJS",
     "outDir": "dist",
+    "moduleResolution": "node",
     "lib": []
   },
   "include": [

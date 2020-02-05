@@ -1,28 +1,28 @@
 {
-  "name": "hashcode2020-warmup",
-  "version": "1.0.0",
-  "description": "Hashcode 2020 warmup",
-  "main": "index.js",
-  "scripts": {
-    "test": "tsc && mocha dist/test/**/*.spec.js",
-    "build": "tsc",
-    "deploy": "tsc -p tsconfig.deploy.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/remi-deltombe/hashcode2020-warmup.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/remi-deltombe/hashcode2020-warmup/issues"
-  },
-  "homepage": "https://github.com/remi-deltombe/hashcode2020-warmup#readme",
-  "dependencies": {
-    "@types/mocha": "^7.0.1",
-    "@types/node": "^13.7.0",
-    "mocha": "^7.0.1",
-    "typescript": "^3.7.5"
-  }
+    "name": "hashcode2020-warmup",
+    "version": "1.0.0",
+    "description": "Hashcode 2020 warmup",
+    "main": "dist/main.js",
+    "scripts": {
+        "test": "tsc && mocha dist/test/**/*.spec.js",
+        "build": "tsc",
+        "deploy": "tsc -p tsconfig.deploy.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/remi-deltombe/hashcode2020-warmup.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/remi-deltombe/hashcode2020-warmup/issues"
+    },
+    "homepage": "https://github.com/remi-deltombe/hashcode2020-warmup#readme",
+    "dependencies": {
+        "@types/mocha": "^7.0.1",
+        "@types/node": "^13.7.0",
+        "mocha": "^7.0.1",
+        "typescript": "^3.7.5"
+    }
 }
