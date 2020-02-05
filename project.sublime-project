@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+
+    "build_systems":
+    [
+        {
+            "name": "test",
+            "cmd": ["npm", "test"],
+
+            "target": "ansi_color_build",
+            "syntax": "Packages/ANSIescape/ANSI.sublime-syntax"
+        }]
+}
