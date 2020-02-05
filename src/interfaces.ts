@@ -1,18 +1,29 @@
 export interface Pattern {
-  from: number;
-  to: number;
-  times: number;
-  word: string;
+    from: number;
+    to: number;
+    times: number;
+    word: string;
 }
 
 export interface Node {
-  value: Pattern;
-  parent?: Node;
-  children: Node[];
+    value: Pattern;
+    parent?: Node;
+    children: Node[];
 }
 
 export interface Context {
-  runes: number[];
-  sentence: string;
-  position: number;
+    runes: number[];
+    sentence: string;
+    position: number;
+}
+
+export interface Action {
+    type: ActionType;
+}
+
+enum ActionType {
+    READ,
+    WRITE,
+    LOOP,
+    WRITEREAD
 }
