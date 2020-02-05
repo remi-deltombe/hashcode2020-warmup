@@ -1,0 +1,24 @@
+{
+  "name": "hashcode2020-warmup",
+  "version": "1.0.0",
+  "description": "Hashcode 2020 warmup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remi-deltombe/hashcode2020-warmup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remi-deltombe/hashcode2020-warmup/issues"
+  },
+  "homepage": "https://github.com/remi-deltombe/hashcode2020-warmup#readme",
+  "dependencies": {
+    "mocha": "^7.0.1",
+    "typescript": "^3.7.5"
+  }
+}
