@@ -1,8 +1,7 @@
-/// <reference path="./interfaces.ts" />
-
-import { performLoop } from 'actions/loop'
-import { performRead } from 'actions/read'
-import { performWrite } from 'actions/write'
+import { Context, Pattern, Action, ActionType } from './interfaces'
+import { performLoop } from './actions/loop'
+import { performRead } from './actions/read'
+import { performWrite } from './actions/write'
 
 export function getActions(context: Context, patterns:Pattern[]) : Action[]
 {
@@ -20,29 +19,31 @@ export function getActions(context: Context, patterns:Pattern[]) : Action[]
 			result.push({type: ActionType.READ, args:[]});
 		}
 	}
+	return result
 }
 
 export function act(context:Context, actions: Action[]) : string
 {
-	const result = '';
+	let result = '';
 	for(const action of actions)
 	{
 		switch(action.type) 
 		{
-		    ActionType.READ:
-		    	performRead(context, action);
+		    case ActionType.READ:
+		    	result += performRead(context, action);
 		    	break;
 
-		    ActionType.WRITE:
-		    	performWrite(context, action);
+		    case ActionType.WRITE:
+		    	result += performWrite(context, action);
 		    	break;
 
-		    ActionType.LOOP:
-		    	performLoop(context, action);
+		    case ActionType.LOOP:
+		    	result += performLoop(context, action);
 		    	break;
 
-		    ActionType.WRITEREAD:
-
+		    case ActionType.WRITEREAD:
+		    	break;
 		}
 	}
+	return result;
 }
