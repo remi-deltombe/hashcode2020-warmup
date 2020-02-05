@@ -1,7 +1,7 @@
 /// <reference path="../interfaces.ts" />
 /// <reference path="./utils.ts" />
 
-function read(context: Context, ranges: Array<[number, number]>): string {
+function performRead(context: Context, ranges: Array<[number, number]>): string {
     let result = "";
     let pos = context.position;
     for (const range of ranges) {
