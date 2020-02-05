@@ -10,12 +10,12 @@ export function getActions(context: Context, patterns:Pattern[]) : Action[]
 	{
 		if(pattern.times > 1)
 		{
-			result.push({type: ActionType.WRITE, args:[]});
+			result.push({type: ActionType.WRITE, args:[pattern.word]});
 			result.push({type: ActionType.LOOP, args:[]});
 		}
 		else
 		{
-			result.push({type: ActionType.WRITE, args:[]});
+			result.push({type: ActionType.WRITE, args:[pattern.word]});
 			result.push({type: ActionType.READ, args:[]});
 		}
 	}
