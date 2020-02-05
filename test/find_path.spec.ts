@@ -1,6 +1,7 @@
 import * as assert from 'assert'
 
 /// <reference path="../src/interfaces.ts" />
+import { Context, Pattern, Node } from "../src/interfaces";
 import { findPath } from '../src/find_path' 
 
 describe('findPath',() => {

@@ -1,5 +1,7 @@
 /// <reference path="./interfaces.ts" />
 
+import { Context, Pattern, Node } from "./interfaces";
+
 function patternForPosition(context:Context, position:number) : Pattern 
 {
 	return {
