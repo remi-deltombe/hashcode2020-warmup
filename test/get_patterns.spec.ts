@@ -8,7 +8,7 @@ describe("hello", () => {
             getPatterns({
                 position: 0,
                 runes: [],
-                sentence: "hello"
+                sentence: getTestData()[0]
             })
         );
     });

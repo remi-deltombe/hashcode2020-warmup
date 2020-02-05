@@ -4,6 +4,7 @@
     "module": "CommonJS",
     "outDir": "dist",
     "moduleResolution": "node",
+    "inlineSourceMap": true,
     "lib": []
   },
   "include": [
