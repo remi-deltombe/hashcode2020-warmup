@@ -19,6 +19,7 @@ export interface Context {
 
 export interface Action {
     type: ActionType;
+    args: any[];
 }
 
 enum ActionType {
