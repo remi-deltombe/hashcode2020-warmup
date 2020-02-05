@@ -1,6 +1,6 @@
-import { Context } from "../interfaces";
+/// <reference path="../interfaces.ts" />
 
-export function goTo(from: number, to: number): string {
+function goTo(from: number, to: number): string {
     if (to === from) {
         return "";
     }
@@ -12,7 +12,7 @@ export function goTo(from: number, to: number): string {
     }
 }
 
-export function setRuneState(context: Context, index: number, targetValue: number): string {
+function setRuneState(context: Context, index: number, targetValue: number): string {
     const distance = Math.abs(context.runes[index] - targetValue);
     if (context.runes[index] > targetValue) {
         return "-".repeat(distance);

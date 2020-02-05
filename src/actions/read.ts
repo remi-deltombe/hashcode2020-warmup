@@ -1,7 +1,7 @@
-import { Context } from "../interfaces";
-import { goTo } from "./utils";
+/// <reference path="../interfaces.ts" />
+/// <reference path="./utils.ts" />
 
-export function read(context: Context, ranges: Array<[number, number]>): string {
+function read(context: Context, ranges: Array<[number, number]>): string {
     let result = "";
     let pos = context.position;
     for (const range of ranges) {

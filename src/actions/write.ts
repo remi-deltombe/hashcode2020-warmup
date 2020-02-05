@@ -4,8 +4,9 @@ import { setRuneState } from "./utils";
 function letterToNumber(letter:string) : number {
 	return letter == ' ' ? 0 : letter.charCodeAt(0) - 64
 } 
+/// <reference path="../interfaces.ts" />
 
-export function performWrite(context: Context, action: Action): string {
+function performWrite(context: Context, action: Action): string {
 	let result = ''
 	let [ word ] = action.args;
 	let values = word.split('').map(letterToNumber)

@@ -1,8 +1,8 @@
-import { Context } from "../interfaces";
-import { goTo, setRuneState } from "./utils";
-import { read } from "./read";
+/// <reference path="../interfaces.ts" />
+/// <reference path="./utils.ts" />
+/// <reference path="./read.ts" />
 
-export function loop(context: Context, iterations: number, from: number, to: number): string {
+function loop(context: Context, iterations: number, from: number, to: number): string {
     let result = "";
     result += goTo(context.position, from - 1);
     result += setRuneState(context, from - 1, iterations);
@@ -12,6 +12,6 @@ export function loop(context: Context, iterations: number, from: number, to: num
     result += goTo(context.position, from - 1);
     result += "-]";
     context.position = from - 1;
-
+ 
     return result;
 }
