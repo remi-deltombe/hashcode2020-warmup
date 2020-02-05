@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import { getTestData } from "./test_words";
+import { getTestData } from "./test_data";
 
 describe("hello", () => {
   it("world", () => {
