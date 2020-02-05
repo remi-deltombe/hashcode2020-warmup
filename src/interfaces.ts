@@ -7,7 +7,7 @@ interface Pattern {
 
 interface Node {
   value: Pattern;
-  parent: Node;
+  parent?: Node;
   children: Node[];
 }
 
