@@ -25,10 +25,10 @@ describe('buildTree',() => {
             sentence: 'abcabcabcaaaaabcabcabc'
         }
     	const patterns = getPatterns(context);
-    	console.log(patterns);
+    	//console.log(patterns);
     	const tree = buildTree(context, patterns );
-    	printTree(tree);
+    	//printTree(tree);
     	const path = findPath(context, tree );
-    	console.log(path);
+    	//console.log(path);
     })
 })

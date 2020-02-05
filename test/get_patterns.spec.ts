@@ -4,12 +4,12 @@ import { getPatterns } from "../src/get_patterns";
 
 describe("hello", () => {
     it("world", () => {
-        console.log(
+        /*console.log(
             getPatterns({
                 position: 0,
                 runes: [],
                 sentence: getTestData()[0]
             })
-        );
+        );*/
     });
 });

@@ -22,7 +22,7 @@ export interface Action {
     args: any[];
 }
 
-enum ActionType {
+export enum ActionType {
     READ,
     WRITE,
     LOOP,
