@@ -1,7 +1,6 @@
-import { Context } from "../src/interfaces";
-import { Pattern } from "./interfaces";
+/// <reference path="./interfaces.ts" />
 
-export function getPatterns(context: Context): Pattern[] {
+function getPatterns(context: Context): Pattern[] {
     const input = context.sentence;
     const result: Pattern[] = [];
 

@@ -1,9 +1,9 @@
-import { Context, Pattern, Action, ActionType } from "./interfaces";
-import { performLoop } from "./actions/loop";
-import { performRead } from "./actions/read";
-import { performWrite } from "./actions/write";
+/// <reference path="./interfaces.ts" />
+/// <reference path="./actions/loop.ts" />
+/// <reference path="./actions/read.ts" />
+/// <reference path="./actions/write.ts" />
 
-export function getActions(context: Context, patterns: Pattern[]): Action[] {
+function getActions(context: Context, patterns: Pattern[]): Action[] {
     const result = [];
     for (const pattern of patterns) {
         if (pattern.times > 1) {
@@ -17,7 +17,7 @@ export function getActions(context: Context, patterns: Pattern[]): Action[] {
     return result;
 }
 
-export function act(context: Context, actions: Action[]): string {
+function act(context: Context, actions: Action[]): string {
     let result = "";
     for (const action of actions) {
         switch (action.type) {

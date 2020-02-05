@@ -1,28 +1,28 @@
-export interface Pattern {
+interface Pattern {
     from: number;
     to: number;
     times: number;
     word: string;
 }
 
-export interface Node {
+interface Node {
     value: Pattern;
     parent?: Node;
     children: Node[];
 }
 
-export interface Context {
+interface Context {
     runes: number[];
     sentence: string;
     position: number;
 }
 
-export interface Action {
+interface Action {
     type: ActionType;
     args: any[];
 }
 
-export enum ActionType {
+enum ActionType {
     READ,
     WRITE,
     LOOP,
