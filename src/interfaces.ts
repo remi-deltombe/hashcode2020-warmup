@@ -8,6 +8,7 @@ export interface Pattern {
 
 export interface Node {
 	value: Pattern;
+	parent: Node;
 	children: Node[];
 }
 
